@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>TruSight SOC</title>
+
+<style>
+
+body{
+    background:#050505;
+    color:#00ff88;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+input,button{
+    padding:12px;
+    margin:8px;
+    background:#111;
+    color:#00ff88;
+    border:1px solid #00ff88;
+    border-radius:8px;
+}
+
+button{
+    background:#00ff88;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+#app{
+    display:none;
+}
+
+.card{
+    background:#111;
+    border:1px solid #00ff88;
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+}
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:200px;
+    height:100%;
+    background:#111;
+    padding:20px;
+}
+
+.main{
+    margin-left:240px;
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td,th{
+    padding:8px;
+    border:1px solid #00ff88;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div id="login">
+
+<h1>🛡️ TruSight SOC</h1>
+
+<h3>Secure Login</h3>
+
+
+<input id="username" placeholder="Username">
+
+<br>
+
+
+<input id="password" type="password" placeholder="Password">
+
+<br>
+
+
+<button onclick="login()">Login</button>
+
+<button onclick="register()">Register</button>
+
+
+<p id="message"></p>
+
+
+</div>
+
+
+
+<div id="app">
+
+
+<div class="sidebar">
+
+<h2>TruSight</h2>
+
+
+<button onclick="dashboard()">
+Dashboard
+</button>
+
+
+<button onclick="investigate()">
+Investigate
+</button>
+
+
+<button onclick="logout()">
+Logout
+</button>
+
+
+</div>
+
+
+
+<div class="main">
+
+<h1>🛡️ TruSight SOC Console</h1>
+
+
+<div id="content"></div>
+
+
+</div>
+
+
+</div>
+
+
+<script>
+let currentUser = null;
+let csrfToken = null;
+
+
+async function api(url, method="GET", body=null){
+
+    let options = {
+        method: method,
+        credentials:"include",
+        headers:{
+            "Content-Type":"application/json"
+        }
+    };
+
+
+    if(body){
+        options.body = JSON.stringify(body);
+    }
+
+
+    if(csrfToken && method !== "GET"){
+        options.headers["x-csrf-token"] = csrfToken;
+    }
+
+
+    let res = await fetch(url, options);
+
+    return await res.json();
+
+}
+
+
+
+async function getCSRF(){
+
+    let r = await api("/api/csrf-token");
+
+    if(r.token){
+        csrfToken = r.token;
+    }
+
+}
+
+
+
+async function register(){
+
+    let username =
+    document.getElementById("username").value.trim();
+
+
+    let password =
+    document.getElementById("password").value;
+
+
+    let r = await api(
+        "/register",
+        "POST",
+        {
+            username,
+            password
+        }
+    );
+
+
+    document.getElementById("message").innerHTML =
+    r.success
+    ? "✅ Account created"
+    : "❌ "+r.message;
+
+}
+
+
+
+
+async function login(){
+
+    let username =
+    document.getElementById("username").value.trim();
+
+
+    let password =
+    document.getElementById("password").value;
+
+
+
+    let r = await api(
+        "/login",
+        "POST",
+        {
+            username,
+            password
+        }
+    );
+
+
+
+    if(r.success){
+
+
+        await getCSRF();
+
+
+        currentUser = {
+
+            username:username,
+
+            role:r.role
+
+        };
+
+
+
+        document.getElementById("login").style.display="none";
+
+
+        document.getElementById("app").style.display="block";
+
+
+
+        dashboard();
+
+
+    }
+
+
+    else{
+
+
+        document.getElementById("message").innerHTML =
+        "❌ "+r.message;
+
+
+    }
+
+
+}
+
+
+
+
+async function logout(){
+
+    await api("/logout");
+
+    location.reload();
+
+}
+async function dashboard(){
+
+    let content = document.getElementById("content");
+
+
+    let html = `
+
+    <div class="card">
+
+    <h2>🏠 Dashboard</h2>
+
+    <p>User: ${currentUser.username}</p>
+
+    <p>Role: ${currentUser.role}</p>
+
+    </div>
+
+
+
+    <div class="card">
+
+    <h2>🔍 Link Scanner</h2>
+
+
+    <input id="scanURL" placeholder="https://example.com">
+
+
+    <button onclick="scan()">
+    Scan
+    </button>
+
+
+    <div id="result"></div>
+
+
+    </div>
+
+    `;
+
+
+
+    if(currentUser.role === "admin"){
+
+
+        let users = await api("/api/admin/users");
+
+
+        if(!Array.isArray(users)){
+            users=[];
+        }
+
+
+
+        html += `
+
+        <div class="card">
+
+        <h2>👥 Users</h2>
+
+
+        <table>
+
+
+        <tr>
+
+        <th>Username</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>IP</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Device</th>
+        <th>Browser</th>
+
+        </tr>
+
+        `;
+
+
+
+        users.forEach(user=>{
+
+
+            html += `
+
+            <tr>
+
+            <td>${user.username || ""}</td>
+
+            <td>${user.role || ""}</td>
+
+            <td>${user.status || ""}</td>
+
+            <td>${user.ip || ""}</td>
+
+            <td>${user.country || ""}</td>
+
+            <td>${user.city || ""}</td>
+
+            <td>${user.device || ""}</td>
+
+            <td>${user.browser || ""}</td>
+
+
+            </tr>
+
+            `;
+
+
+        });
+
+
+
+        html += `
+
+        </table>
+
+        </div>
+
+        `;
+
+
+    }
+
+
+
+    content.innerHTML = html;
+
+
+}
+
+
+
+
+async function scan(){
+
+
+    let url =
+    document.getElementById("scanURL").value;
+
+
+
+    let r = await api(
+        "/api/links",
+        "POST",
+        {
+            url:url
+        }
+    );
+
+
+
+    if(r.analysis){
+
+
+        document.getElementById("result").innerHTML = `
+
+
+        <div class="card">
+
+
+        <h2>🔍 Scan Results</h2>
+
+
+        <p>
+        <b>Domain:</b>
+        ${r.analysis.domain || "Unknown"}
+        </p>
+
+
+        <p>
+        <b>Safety:</b>
+        ${r.analysis.safetyScore || 0}/100
+        </p>
+
+
+        <p>
+        <b>Threat:</b>
+        ${r.analysis.threatCategory || "Unknown"}
+        </p>
+
+
+        <p>
+        <b>IP:</b>
+        ${r.analysis.ip || "Unknown"}
+        </p>
+
+
+        <p>
+        <b>Country:</b>
+        ${r.analysis.country || "Unknown"}
+        </p>
+
+
+        <p>
+        <b>SSL:</b>
+        ${r.analysis.ssl || "Unknown"}
+        </p>
+
+
+        </div>
+
+
+        `;
+
+
+    }
+
+    else{
+
+
+        document.getElementById("result").innerHTML =
+        "❌ "+(r.message || "Scan failed");
+
+
+    }
+
+
+}
+async function investigate(){
+
+    document.getElementById("content").innerHTML = `
+
+
+    <div class="card">
+
+
+    <h2>🔍 Investigation</h2>
+
+
+    <input id="investURL" placeholder="https://example.com">
+
+
+    <button onclick="runInvestigation()">
+    Scan
+    </button>
+
+
+    <div id="investResult"></div>
+
+
+    </div>
+
+
+    `;
+
+
+}
+
+
+
+async function runInvestigation(){
+
+
+    let url =
+    document.getElementById("investURL").value;
+
+
+
+    let r = await api(
+        "/api/investigate",
+        "POST",
+        {
+            url:url
+        }
+    );
+
+
+
+    if(r.result){
+
+
+        document.getElementById("investResult").innerHTML = `
+
+
+        <div class="card">
+
+
+        <h2>Results</h2>
+
+
+        <p>
+        <b>Domain:</b>
+        ${r.result.domain || "Unknown"}
+        </p>
+
+
+        <p>
+        <b>Score:</b>
+        ${r.result.safetyScore || 0}/100
+        </p>
+
+
+        <p>
+        <b>Threat:</b>
+        ${r.result.threatCategory || "Unknown"}
+        </p>
+
+
+        </div>
+
+
+        `;
+
+
+    }
+
+    else{
+
+
+        document.getElementById("investResult").innerHTML =
+        "❌ "+(r.message || "Failed");
+
+
+    }
+
+
+}
+
+
+
+
+
+async function checkLogin(){
+
+
+    let r = await api("/api/me");
+
+
+
+    if(r.loggedIn){
+
+
+        currentUser = r.user;
+
+
+
+        document.getElementById("login").style.display="none";
+
+
+        document.getElementById("app").style.display="block";
+
+
+        dashboard();
+
+
+    }
+
+
+}
+
+
+
+
+checkLogin();
+
+
+</script>
+
+
+</body>
+
+</html>

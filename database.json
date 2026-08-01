@@ -1,0 +1,821 @@
+{
+  "users": [
+    {
+      "id": 1785514041167,
+      "username": "Felix slax",
+      "password": "$2b$10$odLEBDzm2a9eqZD9Tb2Fi.ss5FhAx66IEwApB/LmU2Y7ufRJT0YX2",
+      "role": "user",
+      "created": "7/31/2026, 6:07:21 PM",
+      "ip": "::1",
+      "geo": {
+        "country": "Local",
+        "city": "Localhost",
+        "isp": "Local"
+      },
+      "device": {
+        "browser": "Chrome Mobile 150.0.0",
+        "browserName": "Chrome Mobile",
+        "os": "Android 0.0.0",
+        "deviceType": "Phone",
+        "language": "en-US,en;q=0.9,fil-PH;q=0.8,fil;q=0.7",
+        "screen": "Unknown",
+        "lastActive": "8/1/2026, 11:11:53 PM"
+      },
+      "lastActive": "8/1/2026, 11:11:53 PM"
+    },
+    {
+      "id": 1785514920396,
+      "username": "Joseph_kamwana_admin_trusight",
+      "password": "$2b$10$QSOCFy63cwPpOXHaOfh4guxPYp0NoqxiTcgNNJ2U.7YRUTj3MtLrG",
+      "role": "admin",
+      "created": "7/31/2026, 6:22:00 PM",
+      "ip": "::1",
+      "geo": {
+        "country": "Local",
+        "city": "Localhost",
+        "isp": "Local"
+      },
+      "device": {
+        "browser": "Chrome Mobile 150.0.0",
+        "browserName": "Chrome Mobile",
+        "os": "Android 0.0.0",
+        "deviceType": "Phone",
+        "language": "en-US,en;q=0.9,fil-PH;q=0.8,fil;q=0.7",
+        "screen": "Unknown",
+        "lastActive": "8/1/2026, 10:41:43 PM"
+      },
+      "lastActive": "8/1/2026, 10:41:43 PM"
+    },
+    {
+      "id": "1785594169139-54e74058",
+      "username": "admin123",
+      "password": "$2b$10$d9i89OTjoaE1O/bMp8YgTeBKfjPTdVIX52.2ZPDJQF21t3tVRmSxO",
+      "role": "user",
+      "status": "active",
+      "ip": "::1",
+      "geo": {
+        "country": "Local",
+        "city": "Localhost",
+        "isp": "Local"
+      },
+      "device": {
+        "browser": "Chrome Mobile 150.0.0",
+        "browserName": "Chrome Mobile",
+        "os": "Android 0.0.0",
+        "deviceType": "Phone",
+        "language": "en-US,en;q=0.9,fil-PH;q=0.8,fil;q=0.7",
+        "screen": "Unknown",
+        "lastActive": "8/1/2026, 4:27:43 PM"
+      },
+      "created": "8/1/2026, 4:22:49 PM",
+      "lastActive": "8/1/2026, 4:27:43 PM"
+    }
+  ],
+  "links": [],
+  "logs": [
+    {
+      "id": 1785514041354,
+      "action": "New user registered: Felix slax",
+      "time": "7/31/2026, 6:07:21 PM"
+    },
+    {
+      "id": 1785514059876,
+      "action": "Felix slax logged in",
+      "time": "7/31/2026, 6:07:39 PM"
+    },
+    {
+      "id": 1785514090011,
+      "action": "Felix slax  logged in",
+      "time": "7/31/2026, 6:08:10 PM"
+    },
+    {
+      "id": 1785514920609,
+      "action": "Admin account created: Joseph kamwana_admin trusight",
+      "time": "7/31/2026, 6:22:00 PM"
+    },
+    {
+      "id": 1785515033414,
+      "action": "Joseph kamwana_admin trusight logged in",
+      "time": "7/31/2026, 6:23:53 PM"
+    },
+    {
+      "id": 1785515053854,
+      "action": "Joseph kamwana_admin trusight logged in",
+      "time": "7/31/2026, 6:24:13 PM"
+    },
+    {
+      "id": 1785516569546,
+      "action": "Joseph kamwana_admin trusight logged in",
+      "time": "7/31/2026, 6:49:29 PM"
+    },
+    {
+      "id": 1785519558472,
+      "action": "Joseph kamwana_admin trusight logged in (Localhost, Local)",
+      "time": "7/31/2026, 7:39:18 PM"
+    },
+    {
+      "id": "1785593597104-10eb6dc7",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:17 PM"
+    },
+    {
+      "id": "1785593598418-07fd952c",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:18 PM"
+    },
+    {
+      "id": "1785593599400-4241bf98",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:19 PM"
+    },
+    {
+      "id": "1785593600209-2be84b8a",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:20 PM"
+    },
+    {
+      "id": "1785593600981-531971d6",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:20 PM"
+    },
+    {
+      "id": "1785593603000-69b8c434",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:23 PM"
+    },
+    {
+      "id": "1785593603550-05a69c8c",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:13:23 PM"
+    },
+    {
+      "id": "1785593850219-53d595db",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:30 PM"
+    },
+    {
+      "id": "1785593850893-974a868b",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:30 PM"
+    },
+    {
+      "id": "1785593851701-210885bb",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:31 PM"
+    },
+    {
+      "id": "1785593852977-eb4586ec",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:32 PM"
+    },
+    {
+      "id": "1785593853707-3386e8ed",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:33 PM"
+    },
+    {
+      "id": "1785593858904-62c78934",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:38 PM"
+    },
+    {
+      "id": "1785593859518-885f3cbc",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:39 PM"
+    },
+    {
+      "id": "1785593861971-2ba7c0cb",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:17:41 PM"
+    },
+    {
+      "id": "1785594169178-fe34c4b5",
+      "action": "REGISTER: admin123",
+      "type": "REGISTER",
+      "user": "System",
+      "ip": "::1",
+      "time": "8/1/2026, 4:22:49 PM"
+    },
+    {
+      "id": "1785594172977-b7bee212",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:22:52 PM"
+    },
+    {
+      "id": "1785594177428-d2f465bb",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:22:57 PM"
+    },
+    {
+      "id": "1785594178728-9bb94161",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:22:58 PM"
+    },
+    {
+      "id": "1785594181243-b2187403",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:01 PM"
+    },
+    {
+      "id": "1785594198519-fd7a740f",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:18 PM"
+    },
+    {
+      "id": "1785594199233-296787b1",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:19 PM"
+    },
+    {
+      "id": "1785594202018-387e88a3",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:22 PM"
+    },
+    {
+      "id": "1785594202786-41e96e91",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:22 PM"
+    },
+    {
+      "id": "1785594203428-21c3e16e",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:23 PM"
+    },
+    {
+      "id": "1785594204202-4d06e1dd",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:24 PM"
+    },
+    {
+      "id": "1785594205798-d6f19512",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:23:25 PM"
+    },
+    {
+      "id": "1785594457659-4a905770",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:27:37 PM"
+    },
+    {
+      "id": "1785594458119-bb98cc76",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:27:38 PM"
+    },
+    {
+      "id": "1785594458754-afcd20bf",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:27:38 PM"
+    },
+    {
+      "id": "1785594463128-a64278d4",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:27:43 PM"
+    },
+    {
+      "id": "1785594463767-aaac0fa4",
+      "action": "LOGIN: admin123",
+      "type": "LOGIN",
+      "user": "admin123",
+      "ip": "::1",
+      "time": "8/1/2026, 4:27:43 PM"
+    },
+    {
+      "id": "1785595106323-a529b92f",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:38:26 PM"
+    },
+    {
+      "id": "1785595106736-2331a9c1",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:38:26 PM"
+    },
+    {
+      "id": "1785595107359-1db75a77",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:38:27 PM"
+    },
+    {
+      "id": "1785596062865-b918765f",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:22 PM"
+    },
+    {
+      "id": "1785596063314-52620e21",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:23 PM"
+    },
+    {
+      "id": "1785596063927-fc407392",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:23 PM"
+    },
+    {
+      "id": "1785596064698-952b10f4",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:24 PM"
+    },
+    {
+      "id": "1785596067943-728b4d5a",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:27 PM"
+    },
+    {
+      "id": "1785596068624-10a11011",
+      "action": "LOGIN: Joseph kamwana_admin trusight",
+      "type": "LOGIN",
+      "user": "Joseph kamwana_admin trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:28 PM"
+    },
+    {
+      "id": "1785596096784-e5c4b10d",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:56 PM"
+    },
+    {
+      "id": "1785596097466-ce8a3a63",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:57 PM"
+    },
+    {
+      "id": "1785596098150-fed959a4",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:58 PM"
+    },
+    {
+      "id": "1785596098904-3acc2e91",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:54:58 PM"
+    },
+    {
+      "id": "1785596100092-4b147b74",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:55:00 PM"
+    },
+    {
+      "id": "1785596101981-13600019",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:55:01 PM"
+    },
+    {
+      "id": "1785596102547-f5c325fc",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 4:55:02 PM"
+    },
+    {
+      "id": "1785596125907-b80db5a0",
+      "action": "LOGIN_FAILED: admin123",
+      "type": "LOGIN_FAILED",
+      "user": "System",
+      "ip": "::1",
+      "time": "8/1/2026, 4:55:25 PM"
+    },
+    {
+      "id": "1785596126634-a95f8281",
+      "action": "LOGIN_FAILED: admin123",
+      "type": "LOGIN_FAILED",
+      "user": "System",
+      "ip": "::1",
+      "time": "8/1/2026, 4:55:26 PM"
+    },
+    {
+      "id": "1785597066137-c5f08ec6",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:06 PM"
+    },
+    {
+      "id": "1785597066898-e4bda913",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:06 PM"
+    },
+    {
+      "id": "1785597067323-796e60fc",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:07 PM"
+    },
+    {
+      "id": "1785597067773-d6a579b1",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:07 PM"
+    },
+    {
+      "id": "1785597068261-d2b134de",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:08 PM"
+    },
+    {
+      "id": "1785597068842-db761588",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:08 PM"
+    },
+    {
+      "id": "1785597069380-d40c7178",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:09 PM"
+    },
+    {
+      "id": "1785597073777-270df3f4",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:11:13 PM"
+    },
+    {
+      "id": "1785598418222-4d41d5e1",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:38 PM"
+    },
+    {
+      "id": "1785598418681-02e6d301",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:38 PM"
+    },
+    {
+      "id": "1785598420710-d5a04320",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:40 PM"
+    },
+    {
+      "id": "1785598421424-bb5f1681",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:41 PM"
+    },
+    {
+      "id": "1785598422012-7cfc43cc",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:42 PM"
+    },
+    {
+      "id": "1785598422857-d71763ce",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:42 PM"
+    },
+    {
+      "id": "1785598425525-21f47bac",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:33:45 PM"
+    },
+    {
+      "id": "1785598466672-20162c4a",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 5:34:26 PM"
+    },
+    {
+      "id": "1785605588571-6443fc9c",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:33:08 PM"
+    },
+    {
+      "id": "1785605602295-196f8e17",
+      "action": "LOGOUT: undefined",
+      "type": "LOGOUT",
+      "user": "System",
+      "ip": "System",
+      "time": "8/1/2026, 7:33:22 PM"
+    },
+    {
+      "id": "1785605643869-c2e4df6d",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:34:03 PM"
+    },
+    {
+      "id": "1785605667111-7f32a652",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 7:34:27 PM"
+    },
+    {
+      "id": "1785605766035-e02993fc",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:36:06 PM"
+    },
+    {
+      "id": "1785605967124-7e864f1a",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:39:27 PM"
+    },
+    {
+      "id": "1785606555189-4dd963e2",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:49:15 PM"
+    },
+    {
+      "id": "1785606615823-a5a17b7d",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 7:50:15 PM"
+    },
+    {
+      "id": "1785606801022-664239ab",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:53:21 PM"
+    },
+    {
+      "id": "1785606871679-423b0b51",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:54:31 PM"
+    },
+    {
+      "id": "1785607100911-ca731601",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 7:58:20 PM"
+    },
+    {
+      "id": "1785608811123-c86291ac",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 8:26:51 PM"
+    },
+    {
+      "id": "1785609445994-485cce6c",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 8:37:25 PM"
+    },
+    {
+      "id": "1785610642851-b17652f0",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 8:57:22 PM"
+    },
+    {
+      "id": "1785611013539-4db36972",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 9:03:33 PM"
+    },
+    {
+      "id": "1785612332209-bec7c41b",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 9:25:32 PM"
+    },
+    {
+      "id": "1785612332546-ca6debc0",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 9:25:32 PM"
+    },
+    {
+      "id": "1785613640735-c1ebc2be",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 9:47:20 PM"
+    },
+    {
+      "id": "1785613939012-b1b6c221",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 9:52:19 PM"
+    },
+    {
+      "id": "1785616647314-d0e967f1",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 10:37:27 PM"
+    },
+    {
+      "id": "1785616903244-d88f6e02",
+      "action": "LOGIN: Joseph_kamwana_admin_trusight",
+      "type": "LOGIN",
+      "user": "Joseph_kamwana_admin_trusight",
+      "ip": "::1",
+      "time": "8/1/2026, 10:41:43 PM"
+    },
+    {
+      "id": "1785618713632-657e400c",
+      "action": "LOGIN: Felix slax",
+      "type": "LOGIN",
+      "user": "Felix slax",
+      "ip": "::1",
+      "time": "8/1/2026, 11:11:53 PM"
+    }
+  ]
+}

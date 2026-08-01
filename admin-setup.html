@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TruSight Admin Setup</title>
+</head>
+
+<body>
+
+<h2>Create TruSight Admin</h2>
+
+<input id="user" placeholder="Admin username">
+<br><br>
+
+<input id="pass" type="password" placeholder="Admin password">
+<br><br>
+
+<button onclick="createAdmin()">Create Admin</button>
+
+<p id="msg"></p>
+
+
+<script>
+
+async function createAdmin(){
+
+let response = await fetch("/create-admin",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+username:document.getElementById("user").value,
+
+password:document.getElementById("pass").value
+
+})
+
+});
+
+
+let data = await response.json();
+
+
+document.getElementById("msg").innerHTML=data.message;
+
+
+}
+
+</script>
+
+</body>
+</html>
