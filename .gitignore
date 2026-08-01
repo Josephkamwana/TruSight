@@ -1,2 +1,5 @@
+cookies.txt
+database.json
+database_backup.json
 .env
 node_modules
